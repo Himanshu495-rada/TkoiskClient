@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-import profilepic from "../../Assets/profilepic.jpg"
-import logo from "../../Assets/Zoomed_Logo.png"
+import profilepic from "../../Assets/profilepic.jpg";
+import logo from "../../Assets/Zoomed_Logo.png";
 import ProfileMoreActions from "./ProfileMoreActions";
 import { useNavigate } from "react-router-dom";
 
@@ -13,15 +13,21 @@ function Sidebar() {
     setMorePopupOpen(!isMorePopupOpen);
   };
 
-  const handleExplore = () => {
-    navigate('/main/explore');
-  }
   const handleHome = () => {
-    navigate('/main/Home');
-  }
+    navigate("/main/Home");
+  };
+
+  const handleExplore = () => {
+    navigate("/main/explore");
+  };
+
+  const handleMessages = () => {
+    navigate("/main/messages");
+  };
+
   const handleProfile = () => {
-    navigate('/main/Profile');
-  } 
+    navigate("/main/Profile");
+  };
 
   return (
     <div className="sidebar">
@@ -37,7 +43,7 @@ function Sidebar() {
             </div>
           </li>
           <li>
-            <div onClick={handleExplore} >
+            <div onClick={handleExplore}>
               <i className="bi bi-search"></i>
               <span>Explore</span>
             </div>
@@ -49,13 +55,13 @@ function Sidebar() {
             </div>
           </li>
           <li>
-            <div>
+            <div onClick={handleMessages}>
               <i className="bi bi-envelope"></i>
               <span>Messages</span>
             </div>
           </li>
           <li>
-            <div onClick={handleProfile} >
+            <div onClick={handleProfile}>
               <i className="bi bi-person"></i>
               <span>Profile</span>
             </div>
@@ -68,20 +74,15 @@ function Sidebar() {
           </li>
         </ul>
       </div>
-      {isMorePopupOpen && (
-
-        <ProfileMoreActions />
-
-      )}
+      {isMorePopupOpen && <ProfileMoreActions />}
       <div className="profile-bar" onClick={toggleMorePopup}>
         <img src={profilepic} alt="Profile" className="profile-pic" />
         <div className="profile-info">
-          <span className="name">{localStorage.getItem('name')}</span>
-          <span className="username">@{localStorage.getItem('username')}</span>
+          <span className="name">{localStorage.getItem("name")}</span>
+          <span className="username">@{localStorage.getItem("username")}</span>
         </div>
         <i className="bi bi-three-dots"></i>
       </div>
-
     </div>
   );
 }
