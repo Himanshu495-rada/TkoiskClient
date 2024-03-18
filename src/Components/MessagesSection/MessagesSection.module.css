@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
-
 /* Common */
-messages_section {
+.messages_section {
   display: flex;
   flex-direction: column;
-  font-family: "Figtree", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  width: 45%;
 }
 
 /* End common */
@@ -23,3 +21,96 @@ messages_section {
 }
 
 /* header end */
+
+/* section_2 */
+
+.section_2_title {
+  text-align: start;
+}
+
+.profiles_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.active_profile_img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 2px solid #484caf;
+}
+/* section_2 end */
+
+/* section_3 */
+.section_3 {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  margin: 10px 0;
+}
+
+.section_3_icon {
+  margin-right: 5px;
+  color: black;
+  font-size: 20px;
+}
+
+.section_3_input {
+  background: none;
+  width: 100%;
+  border: none;
+  outline: 0;
+  color: black;
+}
+/* section_3 end */
+
+/* section_4 */
+
+.section_4 {
+  width: 100%;
+}
+.section_4_table {
+  width: 100%;
+}
+
+.section_4_row {
+  display: flex;
+  padding: 10px 0;
+}
+
+.section_4_row:hover {
+  background-color: #e9e9e9;
+}
+
+.section_4_profile_img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #484caf;
+}
+
+.section_4_profile_details {
+  transform: translateY(-10px);
+  display: flex;
+}
+
+.section_4_profile_name {
+  font-size: 20px;
+}
+
+.section_4_profile_id {
+  color: rgb(167, 167, 167);
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* section_4 end */

@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_container {
+  background: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px 20px;
+  margin: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: max-content;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.login_email,
+.login_password {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #3494e6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.floating_icon {
+  transform: translateY(-50px);
+  position: absolute;
+  background: #ffffff;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.floating_icon img {
+  max-width: 40px;
+  min-width: 40px;
+}
+
+.floating_icon:hover {
+  transform: translateY(-65px);
+}
+.extra_links {
+  margin-top: 10px;
+  text-align: center;
+}
+.extra_links span {
+  color: black;
+}
+.extra_links a {
+  text-decoration: none;
+  color: #3494e6;
+  margin: 0 5px;
+}
+.alert i {
+  margin-right: 30px;
+}
